@@ -1,0 +1,39 @@
+.relative-pos{
+    background-color: aqua;
+    position:relative;
+    left: 50px;
+    /* top: 50px; */
+    z-index: 2;
+}
+.relative-pos1{
+    position:relative;
+    /* left: 50px;
+    top: 50px; */
+}
+.relative-pos2{
+    position:relative;
+    left: 50px;
+    top: 50px;
+}
+.div-pos{
+    position: relative;
+    margin: 500px;
+    border: 2px solid gold;
+    height: 100px;
+    width: 200px;
+}
+.abs-pos{
+    position:absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.fix-pos{
+    position: fixed;
+    top: 10px;
+}
+
+.stick-pos{
+    position: sticky;
+    top: 100px;
+}
