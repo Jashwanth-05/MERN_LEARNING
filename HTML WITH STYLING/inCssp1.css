@@ -4,3 +4,19 @@
     border: 2px solid blue;
     margin:5px;
 }
+.fixed-position{
+    position: fixed;
+    background-color:aqua ;
+    text-align: center;
+    margin-top:-25px;
+    margin-left: -10px;
+    padding: 5px;
+    width: 100%;
+
+    
+}
+
+.relative-position{
+    position: relative;
+    margin: 50px;
+}
