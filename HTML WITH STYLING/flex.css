@@ -1,0 +1,35 @@
+nav{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content:space-evenly;
+    padding: 20px;
+    background-color: black;
+    font-size: larger;
+}
+.link{
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: none;
+}
+.link:hover{
+    background-color: gray;
+}
+body{
+    margin: 0;
+}
+
+.section{
+    position: absolute;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.section ol{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
