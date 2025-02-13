@@ -1,0 +1,17 @@
+input{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+input,label{
+    display: block;
+    margin-bottom: 5px;
+}
+button{
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.bt-container{
+    position: relative;
+    left: 50px;
+}
