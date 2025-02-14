@@ -22,14 +22,46 @@ body{
 
 .section{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-left: -15px;
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 10px;
+    display: none; 
+}
+
+nav li:hover .section {
+    display: block;
 }
 .section ol{
     list-style: none;
     padding-left: 0;
     margin-left: 0;
+}
+
+
+@media screen and (max-width:600px){
+    nav{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        background-color: black;
+        font-size: larger;
+    }
+    .link{
+        color: white;
+        border-radius: 3px;
+        padding:5px;
+        text-decoration: none;
+    }
+    .link:hover{
+        background-color: gray;
+    }
+
+    nav li{
+        text-align: center;
+        padding: 10px;
+    }
 }
