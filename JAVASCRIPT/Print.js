@@ -163,9 +163,6 @@
 // function testfunc(){
 //     console.log("this is a test func")
 // }
-// testfunc()
-
-//task2:
 //  2)with parameter without argument
 //  3)without parameter with argument
 //  4)with parameter with argument
