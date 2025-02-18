@@ -111,3 +111,80 @@
 //     console.log("welcome back")
 // }
 // sjit("welcome",sjitcb)
+
+// function formsub(message,cbf){
+//     cbf()
+//     console.log(message)
+// }
+// function formvalid(){
+//     console.log("form validation success")
+// }
+// formsub("form submitted sucessfully",formvalid)
+
+// //async/await(program runs multiple functions simultaneously)
+// async function asf(){
+//     console.log("hello")
+// }
+// console.log(asf()) //hello, Promise { undefined }
+
+// async function asf(){
+//     setTimeout(function(){
+//         console.log("hello")
+//     },5000)     //Promise { undefined }, hello(after 5000ms)
+// }
+// console.log(asf())
+
+// react project creation
+// C:\Users\joans\OneDrive\Documents\desktop\mern>node -v
+// v20.18.1
+
+// C:\Users\joans\OneDrive\Documents\desktop\mern>npm -v
+// 11.0.0
+
+// C:\Users\joans\OneDrive\Documents\desktop\mern>npx -v
+// 11.0.0
+
+// C:\Users\joans\OneDrive\Documents\desktop\mern>npm create vite@latest
+// Need to install the following packages:
+// create-vite@6.2.0
+// Ok to proceed? (y) y
+
+
+// > npx
+// > create-vite
+
+// √ Project name: ... frontend
+// √ Select a framework: » React
+// √ Select a variant: » JavaScript + SWC
+
+// Scaffolding project in C:\Users\joans\OneDrive\Documents\desktop\mern\frontend...
+
+// Done. Now run:
+
+//   cd frontend
+//   npm install
+//   npm run dev
+
+
+// C:\Users\joans\OneDrive\Documents\desktop\mern>cd frontend
+
+// C:\Users\joans\OneDrive\Documents\desktop\mern\frontend>npm i
+
+// added 221 packages, and audited 222 packages in 42s
+
+// 105 packages are looking for funding
+//   run npm fund for details
+
+// found 0 vulnerabilities
+
+// C:\Users\joans\OneDrive\Documents\desktop\mern\frontend>npm run dev
+
+// > frontend@0.0.0 dev
+// > vite
+
+
+//   VITE v6.1.0  ready in 716 ms
+
+//   ➜  Local:   http://localhost:5173/
+//   ➜  Network: use --host to expose
+//   ➜  press h + enter to show help
