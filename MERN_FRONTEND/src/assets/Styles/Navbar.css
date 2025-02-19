@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+li{
+    list-style-type: none;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+li:hover{
+    background-color: gray;
+}
+*{
+    margin: 0;
+}
