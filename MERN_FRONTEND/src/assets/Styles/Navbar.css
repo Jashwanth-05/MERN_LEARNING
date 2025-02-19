@@ -20,3 +20,8 @@ li:hover{
 *{
     margin: 0;
 }
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
