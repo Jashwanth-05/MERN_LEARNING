@@ -10,6 +10,10 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import ClassCompEg from './Components/Class_Components/ClassComponentEG'
 import "./App.css"
 import UseEffect from './Components/Functional_Components/UseEffect'
+import UseEffectAPI from './Components/Functional_Components/UseEffectAPI'
+import UseState from './Components/Functional_Components/UseState'
+import UseRef from './Components/Functional_Components/UseRef'
+import UseMemo from './Components/Functional_Components/UseMemo'
 const App = () => {
   return (
     <div>
@@ -23,6 +27,10 @@ const App = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/useeffect" element={<UseEffect />} />
+            <Route path="/usestate" element={<UseState/>} />
+            <Route path="/useeffectapi" element={<UseEffectAPI />} />
+            <Route path="/useref" element={<UseRef/>} />
+            <Route path="/usememo" element={<UseMemo />} />
         </Routes>
       </BrowserRouter>
     </div>
