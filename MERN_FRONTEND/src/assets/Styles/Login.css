@@ -1,0 +1,27 @@
+
+.container{
+    width: 98vw;
+    height: 90vh;
+    position: relative;
+}
+
+.form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    display: block;
+}
+button{
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}

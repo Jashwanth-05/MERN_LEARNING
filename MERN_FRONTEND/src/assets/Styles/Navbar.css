@@ -1,5 +1,6 @@
 nav{
     display: flex;
+    position: relative;
     background-color:black;
     color: white;
     padding: 10px;
@@ -24,4 +25,15 @@ li:hover{
 .nav-link{
     text-decoration: none;
     color: white;
+}
+.drop-down{
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -15px;
+    padding: 5px;
+}
+.drop-down li{
+    list-style-type: none;
 }
