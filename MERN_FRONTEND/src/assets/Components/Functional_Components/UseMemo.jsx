@@ -14,7 +14,9 @@ const UseMemo = () => {
         backgroundColor:theme?"black":"white",
         color:theme?"white":"black"
     }
-    // var slowFunction =(number)=>()
+    var doublingUpANumber=useMemo(()=>{
+        return slowFunction(number)
+    },[number])
   return (
     <>
         <div style={styling}>
@@ -23,7 +25,7 @@ const UseMemo = () => {
             Number Box:{" "}
             <input type="number" value={number} onChange={(e)=>{setNumber(e.target.value)}}/>
             <h2>The number is {number}</h2>
-            <h2>The Number is {slowFunction(number)}</h2>
+            <h2>The Number is {doublingUpANumber}</h2>
         </div>
     </>
   )
