@@ -16,8 +16,19 @@ const Navbar = () => {
               <li><Link to="/useeffectapi" className="nav-link">UseEffectAPI</Link></li>
               <li><Link to="/useref" className="nav-link">UseRef</Link></li>
               <li><Link to="/usememo" className="nav-link">UseMemo</Link></li>
+              <li><Link to="/usecallback" className="nav-link">UseCallback</Link></li>
+              <li>
+                <Link to="/use-memoize" className="nav-link">
+                  useMemoizeCustomHook
+                </Link>
+              </li>
               </ul>)}
             </li>
+            <li>
+          <Link to="/hoc" className="nav-link">
+            HoC
+          </Link>
+        </li>
             <li><Link to='/contact' className="nav-link">Contact</Link></li>
             <li><Link to='/login' className="nav-link">Login</Link></li>
         </nav>
