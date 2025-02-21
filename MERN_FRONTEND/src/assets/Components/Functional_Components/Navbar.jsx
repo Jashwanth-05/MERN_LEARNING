@@ -3,6 +3,7 @@ import { useState } from "react"
 import "../../Styles/Navbar.css"
 const Navbar = () => {
   var [dropdown,setDropdown]=useState(false);
+  var [dropdown1, showDropdown1] = useState(false);
   return (
     <header>
         <nav >
@@ -28,6 +29,29 @@ const Navbar = () => {
           <Link to="/hoc" className="nav-link">
             HoC
           </Link>
+        </li>
+        <li
+          className="dropdown-container"
+          onMouseEnter={() => showDropdown1(!dropdown1)}
+          onMouseLeave={() => showDropdown1(!dropdown1)}
+        >
+          <span className="nav-link">Memoization</span>
+          
+            {dropdown1 && (
+              <ol className="drop-down">
+              <li>
+                <Link to="/memo" className="nav-link">
+                  Memo
+                </Link>
+              </li>
+              <li>
+                <Link to="/lazy" className="nav-link">
+                  Lazy Component
+                </Link>
+              </li>
+              </ol>
+            )}
+          
         </li>
             <li><Link to='/contact' className="nav-link">Contact</Link></li>
             <li><Link to='/login' className="nav-link">Login</Link></li>
