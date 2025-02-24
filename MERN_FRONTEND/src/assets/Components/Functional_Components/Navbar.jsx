@@ -53,6 +53,7 @@ const Navbar = () => {
             )}
           
         </li>
+            <li><Link to="/res" className="nav-link">ContextAPI</Link></li>
             <li><Link to='/contact' className="nav-link">Contact</Link></li>
             <li><Link to='/login' className="nav-link">Login</Link></li>
         </nav>

@@ -19,6 +19,9 @@ import UseMemoize from './Components/Functional_Components/Hooks/UseMemoize'
 import HoC from './Components/Functional_Components/HoC/HoC'
 import Memo from './Components/Functional_Components/Memoization/Memo.jsx'
 import LazyLoadingAndSuspense from './Components/Functional_Components/Memoization/LazyLoadingAndSuspense.jsx'
+import Student from './Components/Functional_Components/ContextAPI/Student.jsx'
+import CoE from './Components/Functional_Components/CoE.jsx'
+import Exam from './Components/Functional_Components/ContextAPI/Exam.jsx'
 const App = () => {
   return (
     <div>
@@ -42,6 +45,7 @@ const App = () => {
             <Route path="/hoc" element= {<HoC />} />
             <Route path="/memo" element= {<Memo />} />
             <Route path="/lazy" element= {<LazyLoadingAndSuspense />} />
+            <Route path="/res" element= {<CoE/>} />
         </Routes>
       </BrowserRouter>
     </div>
