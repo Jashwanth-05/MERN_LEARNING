@@ -2,6 +2,8 @@ const express= require('express')
 
 const mdb=require('mongoose')
 const dotenv=require('dotenv')
+const bcrypt = require('bcrypt');
+
 dotenv.config()
 const Signup=require('./models/signupSchema')
 const app =express()
@@ -20,12 +22,12 @@ app.get("/",(req,res)=>(
 app.post("/signup", async (req, res) => {
     try {
         const { firstName, lastName, email, password } = req.body;
-
+        const hashedPassword= await bcrypt.hash(password,10);
         const newSignup = new Signup({
             firstName,
             lastName,
             email,
-            password
+            password:hashedPassword
         });
 
         await newSignup.save();
