@@ -17,13 +17,19 @@ const Login = () => {
 
   const HandleSubmit =async(event)=>{
       event.preventDefault()
-      const res=await axios.post("https://personal-budget-manager-rk3a.onrender.com/login",form)
-      const {message,isLogin}=res.data
-      if(isLogin){
-        alert(message)
-        navigate('/home')
-      }else{
-        alert(message)
+      try {
+        const res = await axios.post(
+          "https://personal-budget-manager-rk3a.onrender.com/login",
+          form
+        );
+        const { message, isLogin } = res.data;
+        if (isLogin) {
+          alert(message);
+          navigate('/home');
+        } 
+      } catch (error) {
+        console.error("Login Request Failed:", error);
+        alert(error.response.data.message);
       }
 
   }

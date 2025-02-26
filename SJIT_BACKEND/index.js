@@ -48,7 +48,7 @@ app.post("/login",async (req,res)=>{
         const{userName,password}=req.body
         const user=await Signup.findOne({userName});
         if(!user){
-            return res.status(404).json({ message: "user not found", isLogin: false })
+            return res.status(404).json({ message: "User Not Found", isLogin: false })
         }
         const validpassword=await bcrypt.compare(password,user.password)
         if(!validpassword){

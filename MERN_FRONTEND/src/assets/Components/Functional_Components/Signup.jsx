@@ -16,16 +16,22 @@ const Signup = () => {
       })
     }
 
-    const handleSignup =async(e)=>{
-        e.preventDefault()
-        const res=await axios.post("https://personal-budget-manager-rk3a.onrender.com/signup",form)
-        const {message,isSignup}=res.data
-        if(isSignup){
-          alert(message)
-          navigate('/login')
-        }else{
-          alert(message)
-        }
+    const handleSignup =async(event)=>{
+      event.preventDefault()
+      try {
+        const res = await axios.post(
+          "https://personal-budget-manager-rk3a.onrender.com/signup",
+          form
+        );
+        const { message, isSignup } = res.data;
+        if (isSignup) {
+          alert(message);
+          navigate('/home');
+        } 
+      } catch (error) {
+        console.error("Login Request Failed:", error);
+        alert(error.response.data.message);
+      }
         
     }
 
