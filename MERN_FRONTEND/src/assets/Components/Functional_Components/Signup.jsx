@@ -18,7 +18,7 @@ const Signup = () => {
 
     const handleSignup =async(e)=>{
         e.preventDefault()
-        const res=await axios.post("http://localhost:5555/signup",form)
+        const res=await axios.post("https://personal-budget-manager-rk3a.onrender.com/signup",form)
         const {message,isSignup}=res.data
         if(isSignup){
           alert(message)
